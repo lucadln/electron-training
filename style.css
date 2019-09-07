@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  font-family: calibri;
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  background: gray;
+  color: black;
+  align-self: stretch;
+  -webkit-app-region: drag;
+}
+
+#content {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background: black;
+  align-items: center;
+}
+
+#text {
+  flex-grow: 1;
+}
+
+.option {
+  color: white;
+  padding: 10px 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+.option:hover {
+  background: red;
+}
