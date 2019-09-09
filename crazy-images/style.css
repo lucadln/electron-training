@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  -webkit-app-region: drag;
+  background: black;
+}
+
+.option {
+  padding: 10px 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+  color: white;
+}
+
+.option:hover {
+  background: red;
+}
+
+div#filePicker {
+  align-self: stretch;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+div#mainContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+div#content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* edit image css */
+
+div#preview, div#imageControls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+}
+
+div#imageEditor {
+  display: flex;
+  flex-direction: row;
+}
